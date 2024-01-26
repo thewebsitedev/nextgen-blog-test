@@ -426,7 +426,7 @@ export async function fetchCategoryPostsPages( id: string, query: string ) {
     } catch ( error ) {
 
         console.error( "Database Error:", error );
-        throw new Error( "Failed to fetch total number of invoices." );
+        throw new Error( "Failed to fetch total number of posts." );
 
     }
 }

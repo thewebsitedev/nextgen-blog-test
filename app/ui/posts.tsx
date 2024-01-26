@@ -16,7 +16,10 @@ export default async function Posts({
     const currentPage = Number(searchParams?.page) || 1;
     const query = searchParams?.query || '';
     const posts = await fetchPaginatedPosts(query, currentPage);
-    const { totalPages, totalPosts } = await fetchPostsPages(query );
+    // const { totalPages, totalPosts } = await fetchPostsPages(query );
+
+    const totalPosts = 0;
+    const totalPages = 0;
 
     return (
         <div>
