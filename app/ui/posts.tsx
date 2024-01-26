@@ -2,6 +2,7 @@ import { fetchPaginatedPosts } from "../lib/data";
 import { fetchPostsPages } from "../lib/data";
 import DashboardPagination from "./dashboard/posts/pagination";
 import Card from "./card";
+import { notFound } from "next/navigation";
 
 // blog posts page.
 export default async function Posts({
